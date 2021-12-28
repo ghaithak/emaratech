@@ -1,0 +1,14 @@
+.row {
+    max-height: 100vh;
+    height: 100vh;
+    .col {
+        &:first-child {
+            max-width: 80px;
+            background: #2258bf;
+            padding: 0;
+        }
+        &:last-child {
+            width: calc(100% - 80px);
+        }
+    }
+}

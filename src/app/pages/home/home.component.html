@@ -1,0 +1,113 @@
+<div class="maincontainer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <app-breadcrumb></app-breadcrumb>
+            </div>
+            <div class="col-12 col-lg-6 text-end toprightbuttons">
+                <button class="btn btn-outline-primary">Set As Default</button>
+                <button class="btn btn-primary">Create Strategy</button>
+            </div>
+        </div>
+        <div class="row sectiontitlecontainer">
+            <h2 class="col-12 col-sm page-title">
+                Strategy
+            </h2>
+            <div class="col-12 col-sm text-end">
+                <a href="#">Strategy tree</a>
+                <span class="seperator"></span> Dubai Store
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-4">
+        <div class="row gx-4 gy-4">
+            <div class="col-12 col-lg-6" *ngFor="let item of [0,1,2,3,4,5,6,7]">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-12 col-sm-7 bar-chart">
+                            <app-bar-chart [percent]="10" title="Execution"></app-bar-chart>
+                        </div>
+                        <div class="col-12 col-sm-5 meter-chart">
+                            <app-meter-chart [percent]="10" title="Performance"></app-meter-chart>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-2 gy-2 stats">
+                    <div class="col-6 col-sm">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4 icons icon1">
+                                    <i-feather name="target"></i-feather>
+                                </div>
+                                <div class="col">
+                                    <div class="number fw-bold">
+                                        15
+                                    </div>
+                                    <div class="text text-muted">
+                                        Objects
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4 icons icon2">
+                                    <i-feather name="sun"></i-feather>
+                                </div>
+                                <div class="col">
+                                    <div class="number fw-bold">
+                                        23
+                                    </div>
+                                    <div class="text text-muted">
+                                        Initi
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4 icons icon3">
+                                    <i-feather name="bar-chart-2"></i-feather>
+                                </div>
+                                <div class="col">
+                                    <div class="number fw-bold">
+                                        27
+                                    </div>
+                                    <div class="text text-muted">
+                                        KPI's
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-4 icons icon4">
+                                    <i-feather name="clipboard"></i-feather>
+                                </div>
+                                <div class="col">
+                                    <div class="number fw-bold">
+                                        48
+                                    </div>
+                                    <div class="text text-muted">
+                                        Actions
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

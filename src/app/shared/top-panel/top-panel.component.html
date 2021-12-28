@@ -1,0 +1,42 @@
+<div class="topbar row">
+    <div class="pages col-12 col-sm-12 col-md">
+        <a href="#" class="active">Home</a>
+        <a href="#">Dashboard</a>
+        <a href="#">My Page</a>
+    </div>
+    <div class="search col col-sm col-md-12 col-lg">
+        <div class="searchContainer">
+            <i-feather name="search"></i-feather>
+            <div class="seperator"></div>
+            <mat-form-field floatLabel='never'>
+                <input matInput type="text" placeholder="Search" />
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="rightitems col col-sm col-md">
+        <img src="assets/usericons.jpg" alt="" class="d-none d-md-inline-block">
+        <img mat-button [matMenuTriggerFor]="animals" src="assets/userimg.jpg" alt="">
+        <i-feather name="more-vertical" class="d-sm-inline-block d-md-none"></i-feather>
+    </div>
+</div>
+
+
+
+
+
+
+<mat-menu #animals="matMenu">
+    <label mat-menu-item>Welcome Ghaith Akkad</label>
+    <button mat-menu-item>User Details</button>
+    <button mat-menu-item>Something else</button>
+    <button mat-menu-item [matMenuTriggerFor]="invertebrates">More</button>
+    <button mat-menu-item>Logout</button>
+</mat-menu>
+
+<mat-menu #invertebrates="matMenu">
+    <button mat-menu-item>Something here</button>
+    <button mat-menu-item>Something here</button>
+    <button mat-menu-item>Something here</button>
+    <button mat-menu-item>Something here</button>
+    <button mat-menu-item>Something here</button>
+</mat-menu>

@@ -1,0 +1,77 @@
+.maincontainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+.toprightbuttons {
+    button:last-child {
+        margin-left: 10px;
+    }
+}
+
+.sectiontitlecontainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .page-title {
+        color: #2258bf;
+        margin: 0;
+        font-size: 18px;
+        max-width: fit-content;
+    }
+    .text-end {
+         :last-child {
+            margin-left: 10px;
+        }
+    }
+}
+
+.gy-2 {
+    margin-top: 3px;
+}
+
+.card {
+    border: 0;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .07);
+}
+
+.bar-chart {
+    margin-top: 20px;
+}
+
+.meter-chart {
+    padding: 10px;
+}
+
+.stats {
+    .card {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .icons {
+        padding-right: 0;
+        &.icon1 {
+            color: #ffaf41;
+        }
+        &.icon2 {
+            color: #56af64;
+        }
+        &.icon3 {
+            color: #3d98f6;
+        }
+        &.icon4 {
+            color: #fd6b6b;
+        }
+        i-feather {
+            width: 30px;
+            margin: 10px 7px;
+        }
+    }
+    .number {
+        font-size: 20px;
+    }
+    .text {
+        font-size: 12px;
+    }
+}

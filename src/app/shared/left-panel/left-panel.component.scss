@@ -1,0 +1,50 @@
+div.main {
+    background: #2258bf;
+    height: 100vh;
+    width: 80px;
+    transition: all 0.3s ease-out;
+    padding-top: 10px;
+    z-index: 2;
+    position: relative;
+    &.open {
+        width: 170px;
+        top: 0;
+        left: 0;
+    }
+}
+
+.logo {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 40px;
+}
+
+.leftIcons {
+    color: #dddddd;
+    .item {
+        margin: 20px 27px;
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+        transition: all 0.3s ease-out;
+        &.open {
+            width: 120px;
+        }
+        .text {
+            margin-left: 10px;
+        }
+    }
+}
+
+.toggle {
+    color: #dddddd;
+    bottom: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 26px;
+    transition: all 0.3s ease-out;
+    &.opened {
+        transform: rotate(180deg);
+    }
+}

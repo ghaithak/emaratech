@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+}
+
+.container .body {
+  width: 100%;
+  height: 10px;
+  background: #fdedd6;
+  position: relative;
+  border-radius: 5px;
+}
+
+.container .value {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 10px;
+  background: #ffaf41;
+  transition: all 0.5s ease-out;
+  border-radius: 5px;
+}
+
+.container .value .rounded {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 0;
+  background: #ffaf41;
+  border-radius: 100%;
+  transform: translateX(50%);
+  outline: 4px solid white;
+}
+
+.container .percent {
+  text-align: left;
+  font-size: 25px;
+}
+
+.container .title {
+  padding-top: 10px;
+}

@@ -1,0 +1,34 @@
+<div class="main" [class.open]="open">
+    <img class="logo" src="assets/logo.svg" alt="">
+
+    <div class="leftIcons">
+        <div class="item" [class.open]="open">
+            <span class="icon"><i-feather name="plus-circle"></i-feather></span>
+            <span class="text">Add item</span>
+        </div>
+        <div class="item" [class.open]="open">
+            <span class="icon"><i-feather name="book"></i-feather></span>
+            <span class="text">Book</span>
+        </div>
+        <div class="item" [class.open]="open">
+            <span class="icon"><i-feather name="bar-chart-2"></i-feather></span>
+            <span class="text">Analyse</span>
+        </div>
+        <div class="item" [class.open]="open">
+            <span class="icon"><i-feather name="user"></i-feather></span>
+            <span class="text">User</span>
+        </div>
+        <div class="item" [class.open]="open">
+            <span class="icon"><i-feather name="check-square"></i-feather></span>
+            <span class="text">Todo</span>
+        </div>
+        <div class="item" [class.open]="open">
+            <span class="icon"><i-feather name="settings"></i-feather></span>
+            <span class="text">Settings</span>
+        </div>
+    </div>
+
+    <div class="toggle" [class.opened]="open" (click)="toggleOpen()">
+        <i-feather name="arrow-right-circle"></i-feather>
+    </div>
+</div>

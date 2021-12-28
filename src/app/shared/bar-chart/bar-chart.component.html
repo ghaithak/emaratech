@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+        <div class="col percent">{{percent.toFixed(2)}}%</div>
+        <div class="col title text-end justify-content-center">{{title}}</div>
+    </div>
+    <div class="body">
+        <div class="value" [style.width.%]="percent">
+            <div class="rounded"></div>
+        </div>
+    </div>
+</div>
